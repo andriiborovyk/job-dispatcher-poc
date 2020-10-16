@@ -1,0 +1,15 @@
+{
+  "namespace": "com.totango.dispatcher",
+  "type": "record",
+  "name": "ConfigDetails",
+  "version": 1,
+  "fields": [
+    {
+      "name": "jobs",
+      "type": {
+        "type": "array",
+        "items": "JobDetails"
+      }
+    }
+  ]
+}

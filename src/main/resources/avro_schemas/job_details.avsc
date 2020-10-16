@@ -1,0 +1,17 @@
+{
+  "namespace": "com.totango.dispatcher",
+  "type": "record",
+  "name": "JobDetails",
+  "version": 1,
+  "fields": [
+    {
+      "name": "topic",
+      "type": "string"
+    },
+    {
+      "name": "consumers",
+      "type": "int"
+    }
+
+  ]
+}
