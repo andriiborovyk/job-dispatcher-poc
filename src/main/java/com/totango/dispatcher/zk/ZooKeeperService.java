@@ -37,7 +37,7 @@ public class ZooKeeperService {
 
     public void init() throws Exception {
         client.blockUntilConnected(1, TimeUnit.MINUTES);
-        myElectionNode = client.create().withProtection().withMode(CreateMode.EPHEMERAL_SEQUENTIAL).forPath(electionPrefixNode, new byte[0]);
+        myElectionNode = client.create().withMode(CreateMode.EPHEMERAL_SEQUENTIAL).forPath(electionPrefixNode, new byte[0]);
     }
 
     public void addUpdateChildrenListener(NodeListUpdateListener updateListener, boolean callWithInitial) throws Exception {
